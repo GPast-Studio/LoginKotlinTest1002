@@ -15,10 +15,18 @@ class MainActivity : AppCompatActivity() {
             val inputId = editId.text.toString()
             val inputPw = editPass.text.toString()
 
+
+//            두개의 변수에 들어가 있는 값 검사 (맞는 아이디/비번)
+//            맞을 떄 => 틀릴 떄 분기처리. (if 문 활용)
+
+
+//              아이디도 비번도 둘다 맞아야 함. => 그래야 관리자.
             if (inputId == "admin@test.com"&& inputPw == "qwer"){
 
+//                관리자 이름을 변수에 저장.
+                val name = "GP_Studio"
 
-                Toast.makeText(this, "관리자입니다", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "${name} 관리자입니다", Toast.LENGTH_SHORT).show()
 
             }
 
